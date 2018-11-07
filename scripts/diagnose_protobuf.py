@@ -12,6 +12,7 @@ Usage:
     [set your environmental variables like PATH and PYTHONPATH]
     python scripts/diagnose_protobuf.py
 """
+# SKk changed this
 
 from __future__ import absolute_import
 from __future__ import division
@@ -26,7 +27,7 @@ try:
     import google.protobuf
     python_version = google.protobuf.__version__
     python_protobuf_installed = True
-except ImportError: 
+except ImportError:
     print("DEBUG: cannot find python protobuf install.")
     python_protobuf_installed = False
 
@@ -92,7 +93,3 @@ if python_protobuf_installed and native_protobuf_installed:
         print(VERSION_MISMATCH)
     else:
         print('All looks good.')
-
-
-
-
